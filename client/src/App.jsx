@@ -1,18 +1,10 @@
-import { useEffect } from "react"
+import { GlobalProvider } from "./GlobalContext.jsx";
+import Router from "./Router.jsx";
 
 export default function App() {
-
-  useEffect(() => {
-    const loadUsers = async () => {
-      const response = await fetch("/api/users")
-      const result = await response.json()
-      console.log(result)
-    }
-
-    loadUsers()
-  })
-
   return <>
-    <h1>React startsida!</h1>
+    <GlobalProvider>
+      <Router />
+    </GlobalProvider>
   </>
 }

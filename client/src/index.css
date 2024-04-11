@@ -1,0 +1,12 @@
+* {
+  background-color: rgb(48, 48, 48);
+  color: ghostwhite;
+}
+
+#loginForm {
+  background-color: darkblue;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
